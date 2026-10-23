@@ -42,16 +42,16 @@ body::before { /* papel texturizado */
   background-image: var(--grain); opacity: .35; mix-blend-mode: multiply;
 }
 main, header, footer { position: relative; z-index: 1; }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; }
 .wrap { width: min(1160px, 100% - 48px); margin-inline: auto; }
 
 /* ---------- tipografía ---------- */
-h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.08; margin: 0; letter-spacing: -.01em; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.08; margin: 0; letter-spacing: -.01em; text-wrap: balance; }
 h1 em, h2 em, h3 em { font-style: italic; font-weight: 400; }
 .eyebrow {
   font-family: var(--sans); font-weight: 500; font-size: 12px; letter-spacing: .22em;
-  text-transform: uppercase; color: var(--burgundy); display: inline-flex; align-items: center; gap: 12px;
+  text-transform: uppercase; color: var(--burgundy); display: inline-flex; align-items: center; gap: 12px; text-wrap: balance;
 }
 .eyebrow::before { content: ""; width: 34px; height: 1px; background: var(--gold); }
 .on-dark .eyebrow, .eyebrow.light { color: var(--gold-soft); }
@@ -81,7 +81,7 @@ h1 em, h2 em, h3 em { font-style: italic; font-weight: 400; }
 .brand { display: flex; align-items: center; gap: 14px; text-decoration: none; }
 .brand .dgg { height: 40px; width: auto; border-radius: 6px; }
 .brand .x { font-family: var(--serif); font-style: italic; color: var(--gold); font-size: 20px; }
-.brand .leo { height: 22px; width: auto; }
+.brand .leo { height: 26px; width: auto; }
 .nav ul { display: flex; gap: 30px; list-style: none; margin: 0; padding: 0; }
 .nav ul a { text-decoration: none; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; font-weight: 400; color: var(--ink-soft); padding: 6px 0; border-bottom: 1px solid transparent; }
 .nav ul a:hover { color: var(--burgundy); border-color: var(--gold); }
@@ -89,7 +89,7 @@ h1 em, h2 em, h3 em { font-style: italic; font-weight: 400; }
 /* ---------- portada ---------- */
 .hero { padding: clamp(40px, 7vw, 88px) 0 clamp(56px, 8vw, 110px); overflow: hidden; }
 .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
-.hero h1 { font-size: clamp(46px, 6.6vw, 92px); margin: 22px 0 26px; }
+.hero h1 { font-size: clamp(44px, 6.2vw, 84px); margin: 22px 0 26px; }
 .hero h1 em { color: var(--burgundy); }
 .hero .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
 .hero-meta { display: flex; gap: 34px; margin-top: 46px; padding-top: 22px; border-top: 1px solid var(--line); }
@@ -102,6 +102,7 @@ h1 em, h2 em, h3 em { font-style: italic; font-weight: 400; }
   overflow: hidden; box-shadow: var(--shadow);
   background:
     url("img/portada.jpg") center/cover no-repeat,
+    url("portada.jpg") center/cover no-repeat,
     radial-gradient(circle at 24% 22%, rgba(214,189,140,.85) 0 5px, transparent 6px),
     radial-gradient(circle at 70% 16%, rgba(214,189,140,.8) 0 4px, transparent 5px),
     radial-gradient(circle at 46% 34%, rgba(214,189,140,.7) 0 6px, transparent 7px),
@@ -308,9 +309,10 @@ h1 em, h2 em, h3 em { font-style: italic; font-weight: 400; }
   .photo { inset: 0 0 0 8%; border-radius: 200px 200px var(--r-lg) var(--r-lg); }
   .tag-label { width: 104px; right: 0; }
   .block { grid-template-columns: 1fr; }
-  .brand .leo { height: 18px; }
+  .brand .leo { height: 22px; }
+  .eyebrow { font-size: 11px; letter-spacing: .16em; gap: 10px; }
+  .eyebrow::before { width: 22px; flex: none; }
   .brand .dgg { height: 34px; }
   .postcard { padding: 38px 28px 30px; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
-
