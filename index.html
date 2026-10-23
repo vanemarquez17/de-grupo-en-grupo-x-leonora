@@ -20,10 +20,11 @@
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="#inicio" aria-label="De Grupo en Grupo 2026 × Leonora Studio">
-      <img class="dgg" src="img/degrupo-coral.png" alt="De Grupo en Grupo">
+      <img width="1374" height="698" class="dgg" src="img/degrupo-coral.png" alt="De Grupo en Grupo" onerror="this.onerror=null;this.src=this.getAttribute('src').replace(/^img\//,'')">
       <span class="x">×</span>
-      <img class="leo" src="img/leonora-negro.png" alt="Leonora Studio">
+      <img width="300" height="94" class="leo" src="img/leonora-negro.png" alt="Leonora Studio" onerror="this.onerror=null;this.src=this.getAttribute('src').replace(/^img\//,'')">
     </a>
+    <div class="nav-right">
     <nav aria-label="Principal">
       <ul>
         <li><a href="#servicios">Servicios</a></li>
@@ -31,6 +32,8 @@
         <li><a href="#informacion">Información</a></li>
       </ul>
     </nav>
+    <a class="ig-btn icon" href="https://www.instagram.com/leonorastudiomx/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Leonora Studio (se abre en una pestaña nueva)" title="Instagram de Leonora Studio"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg></a>
+    </div>
   </div>
 </header>
 
@@ -60,7 +63,7 @@
           <svg class="star-deco" style="right:16%;top:26%;width:16px;height:16px"><use href="#star"/></svg>
           <svg class="star-deco" style="left:52%;top:6%;width:14px;height:14px"><use href="#star"/></svg>
         </div>
-        <div class="tag-label"><img src="img/degrupo-coral.png" alt=""></div>
+        <div class="tag-label"><img width="1374" height="698" src="img/degrupo-coral.png" alt="" onerror="this.onerror=null;this.src=this.getAttribute('src').replace(/^img\//,'')"></div>
         <div class="invite">
           <!-- moño de satín -->
           <svg class="ribbon" viewBox="0 0 120 70" fill="none">
@@ -79,7 +82,7 @@
           </svg>
           <div class="small">Estás invitada(o)</div>
           <div class="big">Viernes <em>13</em> de noviembre</div>
-          <div class="row">12:00 a 16:00 h · Lugar por confirmar</div>
+          <div class="row">12:00 a 16:00 h<br>Lugar por confirmar</div>
           <svg class="star" style="margin:14px auto 0;display:block"><use href="#star"/></svg>
         </div>
       </div>
@@ -227,7 +230,7 @@
       </div>
 
       <div class="thanks">
-        <div class="badge-logo"><img src="img/degrupo-coral.png" alt="De Grupo en Grupo"></div>
+        <div class="badge-logo"><img width="1374" height="698" src="img/degrupo-coral.png" alt="De Grupo en Grupo" onerror="this.onerror=null;this.src=this.getAttribute('src').replace(/^img\//,'')"></div>
         <div>
           <span class="eyebrow">Gracias</span>
           <h2>Por el esfuerzo de cada <em>grupo</em> que hace comunidad.</h2>
@@ -242,16 +245,20 @@
 <footer class="footer">
   <div class="wrap">
     <div class="logos">
-      <img class="dgg" src="img/degrupo-coral.png" alt="De Grupo en Grupo" style="border-radius:8px">
+      <img width="1374" height="698" class="dgg" src="img/degrupo-coral.png" alt="De Grupo en Grupo" style="border-radius:8px" onerror="this.onerror=null;this.src=this.getAttribute('src').replace(/^img\//,'')">
       <span class="x">×</span>
-      <img class="leo" src="img/leonora-crema.png" alt="Leonora Studio">
+      <img width="300" height="94" class="leo" src="img/leonora-crema.png" alt="Leonora Studio" onerror="this.onerror=null;this.src=this.getAttribute('src').replace(/^img\//,'')">
     </div>
-    <small>De Grupo en Grupo 2026 · <a href="trabajadoras.html">Acceso trabajadoras</a></small>
+    <div class="foot-right">
+      <a class="ig-btn text" href="https://www.instagram.com/leonorastudiomx/" target="_blank" rel="noopener noreferrer" aria-label="Ver el Instagram de Leonora Studio (se abre en una pestaña nueva)"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg><span>@leonorastudiomx</span></a>
+      <small>De Grupo en Grupo 2026 · <a href="trabajadoras.html">Acceso trabajadoras</a></small>
+    </div>
   </div>
 </footer>
 
 <script src="config.js"></script>
 <script src="data/groups.js"></script>
+<script>window.GRUPOS||document.write('<script src="groups.js"><\/script>')</script>
 <script src="common.js"></script>
 <script src="app.js"></script>
 </body>
