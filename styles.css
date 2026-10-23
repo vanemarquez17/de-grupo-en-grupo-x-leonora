@@ -313,3 +313,7 @@ h1 em, h2 em, h3 em { font-style: italic; font-weight: 400; }
   .postcard { padding: 38px 28px 30px; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+/* Prueba de publicación */
+body {
+  outline: 3px solid red;
+}
