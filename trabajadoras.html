@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Agenda · Leonora Studio × De Grupo en Grupo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="star" viewBox="0 0 24 24"><path d="M12 1C12.6 8 16 11.4 23 12C16 12.6 12.6 16 12 23C11.4 16 8 12.6 1 12C8 11.4 11.4 8 12 1Z"/></symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Volver al sitio">
+      <img class="dgg" src="img/degrupo-coral.png" alt="De Grupo en Grupo">
+      <span class="x">×</span>
+      <img class="leo" src="img/leonora-negro.png" alt="Leonora Studio">
+    </a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="staff-hero">
+    <span class="eyebrow">Equipo Leonora Studio</span>
+    <h1>Agenda del <em>viernes 13</em></h1>
+    <p class="lede" style="margin:0">Nombre, horario y servicio de cada cita. Se actualiza sola cada 30 segundos.</p>
+  </section>
+
+  <section id="gate" class="gate">
+    <h3 style="font-size:28px;color:var(--forest)">Acceso</h3>
+    <p style="margin:6px 0 0;color:var(--ink-soft);font-size:15px">Ingresa el código que te compartió la organización.</p>
+    <form id="gateForm">
+      <div class="field" id="codeField">
+        <label for="code">Código de acceso</label>
+        <input id="code" type="password" autocomplete="current-password" placeholder="••••••••">
+        <span class="err" id="codeErr">Código incorrecto.</span>
+      </div>
+      <button class="btn" type="submit">Entrar</button>
+    </form>
+  </section>
+
+  <section id="board" hidden>
+    <div class="toolbar">
+      <div class="chips" role="group" aria-label="Filtrar por servicio">
+        <button class="chip" data-f="todos" aria-pressed="true">Todos</button>
+        <button class="chip" data-f="peinado" aria-pressed="false">Peinado</button>
+        <button class="chip" data-f="unas" aria-pressed="false">Gelish liso</button>
+      </div>
+      <div class="updated" id="updated"></div>
+    </div>
+    <div class="timeline" id="timeline" aria-live="polite"></div>
+  </section>
+</main>
+
+<script src="config.js"></script>
+<script src="common.js"></script>
+<script src="staff.js"></script>
+</body>
+</html>
